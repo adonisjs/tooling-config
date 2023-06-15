@@ -6,6 +6,6 @@ module.exports = {
   plugins: ['@adonisjs/eslint-plugin'],
 
   rules: {
-    'adonis/prefer-lazy-controller-import': 'error',
+    '@adonisjs/prefer-lazy-controller-import': 'error',
   },
 }
