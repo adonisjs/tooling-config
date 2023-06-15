@@ -1,6 +1,6 @@
 {
   "name": "@adonisjs/tooling-configs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Tooling configs for AdonisJS projects",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
