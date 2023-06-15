@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@adonisjs/eslint-plugin':
+    specifier: workspace:*
+    version: link:../eslint-plugin
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.59.11
     version: 5.59.11(@typescript-eslint/parser@5.59.11)(eslint@8.42.0)(typescript@5.1.3)
@@ -10,9 +13,6 @@ dependencies:
   eslint:
     specifier: '>=7.4.0'
     version: 8.42.0
-  eslint-plugin-adonisjs:
-    specifier: workspace:*
-    version: link:../eslint-plugin
   eslint-plugin-unicorn:
     specifier: ^47.0.0
     version: 47.0.0(eslint@8.42.0)

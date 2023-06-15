@@ -13,7 +13,7 @@
   "author": "Julien Ripouteau <julien@ripouteau.com>",
   "license": "ISC",
   "dependencies": {
-    "@adonisjs/eslint-plugin": "link:../eslint-plugin",
+    "@adonisjs/eslint-plugin": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
     "eslint-plugin-unicorn": "^47.0.0"
