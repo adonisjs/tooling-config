@@ -19,3 +19,7 @@ This repository contains the tooling configuration presets for AdonisJS. That in
 - [@adonisjs/tsconfig](./packages/typescript-config/) - Typescript configuration for AdonisJS applications and packages.
   - `@adonisjs/tsconfig/tsconfig.base.json` - Common configuration for all projects.
   - `@adonisjs/tsconfig/node-esm.json` - Configuration for NodeJS ESM projects. Extends from `tsconfig.base.json`. Useful for AdonisJS 6 projects.
+
+## Eslint custom rules
+
+- `@adonisjs/prefer-lazy-controller-import` - Prefer lazy imports for controllers. This will help for keeping a fast boot time for your application. Rule is auto-fixable so as soon as you save the file, it will convert the standard import to a lazy one.

@@ -8,7 +8,7 @@
   "keywords": [],
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp -r"
+    "release": "bumpp -r && pnpm -r publish"
   },
   "devDependencies": {
     "@adonisjs/eslint-config": "workspace:*",
