@@ -3,18 +3,6 @@
   "compilerOptions": {
     "declaration": false,
     "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "paths": {
-      "#controllers/*": ["./app/controllers/*"],
-      "#exceptions/*": ["./app/exceptions/*"],
-      "#models/*": ["./app/models/*"],
-      "#services/*": ["./app/services/*"],
-      "#listeners/*": ["./app/listeners/*"],
-      "#events/*": ["./app/events/*"],
-      "#middleware/*": ["./app/middleware/*"],
-      "#validators/*": ["./app/validators/*"],
-      "#start/*": ["./start/*"],
-      "#config/*": ["./config/*"]
-    }
+    "emitDecoratorMetadata": true
   }
 }
