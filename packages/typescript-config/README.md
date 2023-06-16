@@ -10,28 +10,28 @@ pnpm add -D @adonisjs/tsconfig
 
 ## Usage
 
-### All projects
+### AdonisJS Package
 
-The base configuration file is `tsconfig.base.json`. It contains the common configuration for all projects. You can extend from this file and add your own configuration.
+Used for AdonisJS packages. Extend from `tsconfig.base.json` :
 
 ```jsonc
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.base.json",
+  "extends": "@adonisjs/tsconfig/tsconfig.package.json",
   "compilerOptions": {
     //
   }
 }
 ```
 
-### Node.JS ESM project
+### AdonisJS apps
 
-For a NodeJS ESM project, extend from `node-esm.json` :
+Used for AdonisJS apps. Extend from `tsconfig.base.json` :
 
 ```jsonc
 {
-  "extends": "@adonisjs/tsconfig/node-esm.json",
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
-    "outDir": "./build"
+    //
   }
 }
 ```
