@@ -3,7 +3,6 @@
  */
 module.exports = {
   extends: ['@adonisjs/eslint-config/presets/ts_base', '@adonisjs/eslint-config/presets/prettier'],
-
   plugins: ['jsonc'],
 
   overrides: [
@@ -11,6 +10,7 @@ module.exports = {
       files: ['package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
+        '@typescript-eslint/naming-convention': 'off',
         'jsonc/sort-keys': [
           'error',
           {
