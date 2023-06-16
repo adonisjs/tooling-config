@@ -7,9 +7,6 @@
     "noUnusedParameters": true,
     "isolatedModules": true,
     "removeComments": true,
-    "rootDir": "../../../",
-    "outDir": "../../../build",
-    "baseUrl": "../../",
     "esModuleInterop": true,
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
@@ -23,8 +20,6 @@
     "skipLibCheck": true,
     "types": ["@types/node"]
   },
-  "include": ["../../../**/*"],
-  "exclude": ["./node_modules", "./build"],
   "ts-node": {
     "swc": true
   }

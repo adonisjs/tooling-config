@@ -18,7 +18,8 @@ Used for AdonisJS packages. Extend from `tsconfig.base.json` :
 {
   "extends": "@adonisjs/tsconfig/tsconfig.package.json",
   "compilerOptions": {
-    //
+    "rootDir": "./",
+    "outDir": "./build"
   }
 }
 ```
@@ -31,7 +32,8 @@ Used for AdonisJS apps. Extend from `tsconfig.base.json` :
 {
   "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
-    //
+    "rootDir": "./",
+    "outDir": "./build"
   }
 }
 ```
