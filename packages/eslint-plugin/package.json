@@ -10,6 +10,7 @@
     ".": "./dist/src/index.js"
   },
   "scripts": {
+    "prepublishOnly": "pnpm build",
     "build": "tsc --outDir dist",
     "test": "ts-node bin/test.ts",
     "quick:test": "ts-node bin/test.ts"
