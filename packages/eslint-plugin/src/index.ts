@@ -1,5 +1,5 @@
 import preferLazyControllerImport from './rules/prefer_lazy_controller_import'
-import preferLazyListenerImport from './rules/prefer_lazy_listener_import
+import preferLazyListenerImport from './rules/prefer_lazy_listener_import'
 
 export = {
   rules: {
