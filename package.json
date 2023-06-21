@@ -29,7 +29,7 @@
     }
   },
   "eslintConfig": {
-    "extends": "@adonisjs/eslint-config/typescript-package"
+    "extends": "@adonisjs/eslint-config/package"
   },
   "prettier": "@adonisjs/prettier-config"
 }
