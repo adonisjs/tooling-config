@@ -1,18 +1,22 @@
 {
   "name": "@adonisjs/eslint-plugin",
   "version": "1.1.2",
-  "description": "",
+  "description": "ESLint plugin to enforce AdonisJS app specific linting rules",
   "files": [
     "dist"
   ],
   "main": "dist/src/index.js",
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
   "scripts": {
     "build": "tsc --outDir dist",
     "quick:test": "ts-node bin/test.ts"
   },
-  "keywords": [],
+  "keywords": ["eslint", "adonisjs", "eslint-plugin"],
   "author": "Julien Ripouteau <julien@ripouteau.com>",
-  "license": "ISC",
+  "contributors": ["virk", "adonisjs"],
+  "license": "MIT",
   "dependencies": {
     "@typescript-eslint/utils": "^5.59.11"
   },
