@@ -1,43 +1,41 @@
 import { AST_NODE_TYPES, TSESTree } from '@typescript-eslint/utils'
 import { createEslintRule } from '../utils'
 
-const httpMethods = ['get', 'post', 'put', 'delete', 'patch']
-
 export default createEslintRule({
-  name: 'prefer-lazy-controller-import',
+  name: 'prefer-lazy-listener-import',
   defaultOptions: [],
   meta: {
     type: 'problem',
     fixable: 'code',
     docs: {
-      description: 'Prefer lazy controller import over standard import',
+      description: 'Prefer lazy listener import over standard import',
       recommended: 'error',
     },
     schema: [],
     messages: {
-      preferLazyControllerImport: 'Replace standard import with lazy controller import',
+      preferLazyListenerImport: 'Replace standard import with lazy listener import',
     },
   },
 
   create: function (context) {
     let importIdentifiers = []
-    let routerIdentifier = ''
+    let emitterIdentifier = ''
     let importNodes = []
 
-    function isRouteCallExpression(node: TSESTree.CallExpression, routerIdentifier: string) {
+    function isEmitterOnCallExpression(node: TSESTree.CallExpression, routerIdentifier: string) {
       return (
         node.callee.type === AST_NODE_TYPES.MemberExpression &&
         node.callee.object.type === AST_NODE_TYPES.Identifier &&
         node.callee.object.name === routerIdentifier &&
         node.callee.property.type === AST_NODE_TYPES.Identifier &&
-        httpMethods.includes(node.callee.property.name)
+        node.callee.property.name === 'on'
       )
     }
 
     return {
       /**
        * Track all imported identifiers
-       * Also get the local name of the router import
+       * Also get the local name of the emitter import
        */
       ImportDeclaration(node) {
         for (const specifier of node.specifiers) {
@@ -47,18 +45,18 @@ export default createEslintRule({
           }
         }
 
-        if (node.source.value === '@adonisjs/core/services/router') {
+        if (node.source.value === '@adonisjs/core/services/emitter') {
           if (node.specifiers[0] && node.specifiers[0].type === 'ImportDefaultSpecifier') {
-            routerIdentifier = node.specifiers[0].local.name
+            emitterIdentifier = node.specifiers[0].local.name
           }
         }
       },
 
       CallExpression(node) {
         /**
-         * Check if we are calling router.get() or any other http method
+         * Check if we are calling emitter.on()
          */
-        if (!isRouteCallExpression(node, routerIdentifier)) {
+        if (!isEmitterOnCallExpression(node, emitterIdentifier)) {
           return
         }
 
@@ -81,7 +79,7 @@ export default createEslintRule({
 
           context.report({
             node: importNodes[element.name],
-            messageId: 'preferLazyControllerImport',
+            messageId: 'preferLazyListenerImport',
             fix(fixer) {
               const importPath = importNodes[element.name].source.raw
               const newImportDeclaration = `const ${element.name} = () => import(${importPath})`
