@@ -8,7 +8,8 @@
   "keywords": [],
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp -r && pnpm -r publish"
+    "release": "bumpp -r && pnpm -r publish",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@adonisjs/eslint-config": "workspace:*",
@@ -28,7 +29,7 @@
     }
   },
   "eslintConfig": {
-    "extends": "@adonisjs/eslint-config/typescript-package"
+    "extends": "@adonisjs/eslint-config/package"
   },
   "prettier": "@adonisjs/prettier-config"
 }

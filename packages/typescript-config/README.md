@@ -1,10 +1,18 @@
 # `@adonisjs/tsconfig`
 
-In TypeScript, the configuration file can extend from a base file. This package provided a few common base configuration files to simplify TypeScript project setup.
+The `@adonisjs/tsconfig` package exports the base TypeScript configuration for AdonisJS applications and packages.
 
 ## Installation
 
+Install the package as a development dependency from the npm packages registry.
+
 ```sh
+npm i -D @adonisjs/tsconfig
+
+# For yarn lovers
+yarn add -D @adonisjs/tsconfig
+
+# For pnpm believers
 pnpm add -D @adonisjs/tsconfig
 ```
 
@@ -12,7 +20,7 @@ pnpm add -D @adonisjs/tsconfig
 
 ### AdonisJS Package
 
-Used for AdonisJS packages. Extend from `tsconfig.base.json` :
+If you are creating an AdonisJS package, you must extend from the `tsconfig.package.json` file.
 
 ```jsonc
 {
@@ -24,9 +32,9 @@ Used for AdonisJS packages. Extend from `tsconfig.base.json` :
 }
 ```
 
-### AdonisJS apps
+### AdonisJS applications
 
-Used for AdonisJS apps. Extend from `tsconfig.base.json` :
+If you are creating an AdonisJS application, you must extend from the `tsconfig.app.json` file. AdonisJS starter kits does this by default.
 
 ```jsonc
 {
