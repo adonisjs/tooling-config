@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "tsc --outDir dist",
+    "test": "ts-node bin/test.ts",
     "quick:test": "ts-node bin/test.ts"
   },
   "keywords": [
