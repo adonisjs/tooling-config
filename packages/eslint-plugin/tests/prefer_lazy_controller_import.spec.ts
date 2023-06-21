@@ -10,6 +10,15 @@ const valids = [
   router.get("/", "HomeController.index")
   router.get("/test", [lazyController, 'index'])
   `,
+  `
+  import router from "@adonisjs/core/services/router"
+  import middleware from '#start/middleware'
+
+  const lazyController = () => import("./controller")
+
+  router.get("/", "HomeController.index").middleware(middleware.auth())
+  router.get("/test", [lazyController, 'index']).middleware(middleware.auth())
+  `,
 ]
 
 const invalids = [
