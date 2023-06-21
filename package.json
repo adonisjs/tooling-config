@@ -1,6 +1,6 @@
 {
   "name": "@adonisjs/tooling-configs",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": true,
   "description": "Tooling configs for AdonisJS projects",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
@@ -8,8 +8,9 @@
   "keywords": [],
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp -r && pnpm -r publish",
-    "format": "prettier --write ."
+    "release": "pnpm test && bumpp -r && pnpm -r publish",
+    "format": "prettier --write .",
+    "test": "pnpm -C packages/eslint-plugin test"
   },
   "devDependencies": {
     "@adonisjs/eslint-config": "workspace:*",
