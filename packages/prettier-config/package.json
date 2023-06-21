@@ -3,9 +3,15 @@
   "version": "1.1.2",
   "description": "",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
-  "contributors": ["virk", "adonisjs"],
+  "contributors": [
+    "virk",
+    "adonisjs"
+  ],
   "license": "MIT",
-  "keywords": ["prettier", "adonisjs"],
+  "keywords": [
+    "prettier",
+    "adonisjs"
+  ],
   "sideEffects": false,
   "main": "index.json",
   "exports": {

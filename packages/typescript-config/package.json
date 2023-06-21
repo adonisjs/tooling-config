@@ -3,9 +3,16 @@
   "version": "1.1.2",
   "description": "Base TypeScript configuration files for AdonisJS applications and packages",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
-  "contributors": ["virk", "adonisjs"],
+  "contributors": [
+    "virk",
+    "adonisjs"
+  ],
   "license": "MIT",
-  "keywords": ["tsconfig", "typescript", "adonisjs"],
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "adonisjs"
+  ],
   "exports": {
     "./tsconfig.app.json": "./tsconfig.app.json",
     "./tsconfig.package.json": "./tsconfig.package.json"

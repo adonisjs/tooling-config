@@ -13,9 +13,16 @@
     "build": "tsc --outDir dist",
     "quick:test": "ts-node bin/test.ts"
   },
-  "keywords": ["eslint", "adonisjs", "eslint-plugin"],
+  "keywords": [
+    "eslint",
+    "adonisjs",
+    "eslint-plugin"
+  ],
   "author": "Julien Ripouteau <julien@ripouteau.com>",
-  "contributors": ["virk", "adonisjs"],
+  "contributors": [
+    "virk",
+    "adonisjs"
+  ],
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/utils": "^5.59.11"
