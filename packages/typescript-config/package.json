@@ -1,6 +1,6 @@
 {
   "name": "@adonisjs/tsconfig",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Base TypeScript configuration files for AdonisJS applications and packages",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
   "contributors": [
