@@ -2,10 +2,7 @@
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-  extends: [
-    './ts_base.js',
-    './prettier.js'
-  ],
+  extends: ['./ts_base.js', './prettier.js'],
 
   plugins: ['jsonc'],
 

@@ -1,26 +1,11 @@
 {
   "name": "@adonisjs/eslint-config",
-  "version": "1.1.7",
   "description": "Base ESLint config used by AdonisJS apps and packages",
+  "version": "1.1.7",
   "exports": {
     "./app": "./presets/ts_app.js",
     "./package": "./presets/ts_package.js"
   },
-  "peerDependencies": {
-    "eslint": ">=7.4.0",
-    "prettier": ">=2.0.0"
-  },
-  "keywords": [
-    "eslint",
-    "eslint_config",
-    "adonisjs"
-  ],
-  "author": "Julien Ripouteau <julien@ripouteau.com>",
-  "contributors": [
-    "virk",
-    "adonisjs"
-  ],
-  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.44.0",
     "prettier": "^3.0.0"
@@ -34,5 +19,20 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unicorn": "^47.0.0",
     "jsonc-eslint-parser": "^2.3.0"
-  }
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "prettier": ">=2.0.0"
+  },
+  "author": "Julien Ripouteau <julien@ripouteau.com>",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint_config",
+    "adonisjs"
+  ],
+  "contributors": [
+    "virk",
+    "adonisjs"
+  ]
 }
