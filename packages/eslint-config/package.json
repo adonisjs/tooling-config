@@ -22,16 +22,16 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.42.0",
-    "prettier": "^2.8.8"
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0"
   },
   "dependencies": {
     "@adonisjs/eslint-plugin": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.59.11",
-    "@typescript-eslint/parser": "^5.59.11",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jsonc": "^2.9.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unicorn": "^47.0.0",
     "jsonc-eslint-parser": "^2.3.0"
   }
