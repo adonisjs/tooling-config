@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "target": "es2020",
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "Node16",
     "outDir": "dist",
     "skipLibCheck": true
   },

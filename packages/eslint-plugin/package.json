@@ -12,8 +12,8 @@
   "scripts": {
     "prepublishOnly": "pnpm build",
     "build": "tsc --outDir dist",
-    "test": "ts-node bin/test.ts",
-    "quick:test": "ts-node bin/test.ts"
+    "test": "node -r ts-node/register bin/test.ts",
+    "quick:test": "node -r ts-node/register bin/test.ts"
   },
   "devDependencies": {
     "@japa/assert": "^1.4.1",

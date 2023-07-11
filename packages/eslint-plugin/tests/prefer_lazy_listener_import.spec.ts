@@ -1,5 +1,5 @@
 import { test } from '@japa/runner'
-import { RuleTester } from '@typescript-eslint/utils/dist/ts-eslint'
+import { RuleTester } from '@typescript-eslint/utils/ts-eslint'
 import rule from '../src/rules/prefer_lazy_listener_import'
 
 const valids = [

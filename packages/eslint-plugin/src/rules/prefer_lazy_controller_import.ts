@@ -11,7 +11,7 @@ export default createEslintRule({
     fixable: 'code',
     docs: {
       description: 'Prefer lazy controller import over standard import',
-      recommended: 'error',
+      recommended: 'recommended',
     },
     schema: [],
     messages: {
@@ -24,11 +24,11 @@ export default createEslintRule({
     let routerIdentifier = ''
     let importNodes = []
 
-    function isRouteCallExpression(node: TSESTree.CallExpression, routerIdentifier: string) {
+    function isRouteCallExpression(node: TSESTree.CallExpression, identifier: string) {
       return (
         node.callee.type === AST_NODE_TYPES.MemberExpression &&
         node.callee.object.type === AST_NODE_TYPES.Identifier &&
-        node.callee.object.name === routerIdentifier &&
+        node.callee.object.name === identifier &&
         node.callee.property.type === AST_NODE_TYPES.Identifier &&
         httpMethods.includes(node.callee.property.name)
       )

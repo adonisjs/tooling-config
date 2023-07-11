@@ -30,7 +30,10 @@
     }
   },
   "eslintConfig": {
-    "extends": "@adonisjs/eslint-config/package"
+    "extends": "@adonisjs/eslint-config/package",
+    "rules": {
+      "unicorn/prefer-module": "off"
+    }
   },
   "prettier": "@adonisjs/prettier-config"
 }

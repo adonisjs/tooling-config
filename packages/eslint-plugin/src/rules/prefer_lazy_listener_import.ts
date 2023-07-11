@@ -9,7 +9,7 @@ export default createEslintRule({
     fixable: 'code',
     docs: {
       description: 'Prefer lazy listener import over standard import',
-      recommended: 'error',
+      recommended: 'recommended',
     },
     schema: [],
     messages: {
