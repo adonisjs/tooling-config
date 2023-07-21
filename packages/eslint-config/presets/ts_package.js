@@ -4,7 +4,7 @@
 module.exports = {
   extends: ['./ts_base.js', './prettier.js'],
 
-  plugins: ['jsonc'],
+  plugins: ['jsonc', 'import'],
 
   overrides: [
     {
@@ -70,4 +70,20 @@ module.exports = {
       },
     },
   ],
+
+  rules: {
+    /**
+     * Imports rules
+     */
+    'sort-imports': [
+      'error',
+      {
+        // Declaration sorting is handled by `import/order` rule
+        ignoreDeclarationSort: true,
+      },
+    ],
+    'import/order': ['error', { alphabetize: { order: 'asc', caseInsensitive: true } }],
+    'import/no-duplicates': ['error', { considerQueryString: true }],
+    'import/newline-after-import': 'error',
+  },
 }
