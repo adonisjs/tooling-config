@@ -85,5 +85,9 @@ module.exports = {
     'import/order': ['error', { alphabetize: { order: 'asc', caseInsensitive: true } }],
     'import/no-duplicates': ['error', { considerQueryString: true }],
     'import/newline-after-import': 'error',
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports', disallowTypeAnnotations: false },
+    ],
   },
 }
