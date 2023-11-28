@@ -40,6 +40,23 @@ const invalids = [
     })
     `,
   ],
+  /**
+   * When used with route.resource
+   */
+  [
+    `
+    import router from "@adonisjs/core/services/router"
+    import ProjectThreadsController from "./controller"
+
+    router.resource("project/:id/threads", ProjectThreadsController)
+    `,
+    `
+    import router from "@adonisjs/core/services/router"
+    const ProjectThreadsController = () => import("./controller")
+
+    router.resource("project/:id/threads", ProjectThreadsController)
+    `,
+  ],
 ]
 
 test('Prefer lazy controller import', ({ assert }) => {
