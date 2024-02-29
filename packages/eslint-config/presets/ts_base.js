@@ -34,6 +34,7 @@ module.exports = {
     'temp',
     'build',
     'dist',
+    'public/assets',
     'pnpm-lock.yaml',
     'yarn.lock',
     'package-lock.json',
