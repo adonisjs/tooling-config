@@ -1,7 +1,7 @@
 {
   "name": "@adonisjs/prettier-config",
   "description": "",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "index.json",
   "exports": {
     ".": "./index.json"

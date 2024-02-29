@@ -1,7 +1,7 @@
 {
   "name": "@adonisjs/tooling-configs",
   "description": "Tooling configs for AdonisJS projects",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "scripts": {
     "lint": "eslint .",
