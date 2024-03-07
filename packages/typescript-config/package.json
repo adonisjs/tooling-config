@@ -4,6 +4,7 @@
   "version": "1.2.2",
   "exports": {
     "./tsconfig.app.json": "./tsconfig.app.json",
+    "./tsconfig.client.json": "./tsconfig.client.json",
     "./tsconfig.package.json": "./tsconfig.package.json"
   },
   "scripts": {},

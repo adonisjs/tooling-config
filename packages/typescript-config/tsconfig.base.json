@@ -17,8 +17,7 @@
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,
-    "skipLibCheck": true,
-    "types": ["@types/node"]
+    "skipLibCheck": true
   },
   "ts-node": {
     "swc": true

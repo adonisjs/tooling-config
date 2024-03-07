@@ -2,6 +2,7 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "declaration": true,
-    "removeComments": false
+    "removeComments": false,
+    "types": ["@types/node"]
   }
 }

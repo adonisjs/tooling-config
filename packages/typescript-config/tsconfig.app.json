@@ -3,6 +3,7 @@
   "compilerOptions": {
     "declaration": false,
     "sourceMap": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "types": ["@types/node"]
   }
 }
