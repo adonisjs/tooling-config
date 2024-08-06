@@ -9,8 +9,8 @@
   "scripts": {},
   "author": "Julien Ripouteau <julien@ripouteau.com>",
   "contributors": [
-    "virk",
-    "adonisjs"
+    "Harminder Virk <virk@adonisjs.com>",
+    "Romain Lanz <romain.lanz@pm.me>"
   ],
   "license": "MIT",
   "keywords": [
