@@ -22,6 +22,6 @@
     "access": "public"
   },
   "dependencies": {
-    "prettier-edgejs": "^0.2.16"
+    "prettier-plugin-edgejs": "^1.0.1"
   }
 }
