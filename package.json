@@ -12,9 +12,9 @@
   "devDependencies": {
     "@adonisjs/eslint-config": "workspace:*",
     "@adonisjs/prettier-config": "workspace:*",
-    "bumpp": "^9.2.1",
-    "eslint": "^8.56.0",
-    "prettier": "^3.1.1",
+    "bumpp": "^9.11.1",
+    "eslint": "^8.57.1",
+    "prettier": "^3.5.3",
     "typescript": "5.2.2"
   },
   "author": "Julien Ripouteau <julien@ripouteau.com>",
